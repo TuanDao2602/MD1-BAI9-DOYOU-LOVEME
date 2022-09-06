@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="tong">
+    <img src="./tho-tinh-may-va-gio-1280x800-7.jpg">
+
+    <h1 id="h1">Do You Love Me!</h1>
+    <div id="hienthi"></div>
+    <div id="chuaTong">
+        <button id="yes" >Yes</button>
+
+        <button id="no" >No</button>
+    </div>
+</div>
+
+<script>
+
+    let btn1=document.getElementById("yes")
+
+    let hienThi=document.getElementById("hienthi")
+    btn1.onclick=function doiChu (){
+        hienThi.innerHTML="I LOVE YOU"
+
+    }
+    let btn2=document.getElementById("no")
+    btn2.onmouseover= function dichuyen(){
+        let width = Math.floor(Math.random() *window.innerWidth)
+        let height = Math.floor(Math.random() * window.innerHeight)
+        document.getElementById('no').style.left = width + "px";
+        document.getElementById('no').style.top = height + "px";
+
+    }
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>
